@@ -1,0 +1,285 @@
+/* ═══════════════════════════════════════════════════════════
+   🎨 GLOBAL STYLES
+   ═══════════════════════════════════════════════════════════ */
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   📱 MAIN APP CONTAINER
+   ═══════════════════════════════════════════════════════════ */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+}
+
+.app-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   🎴 PROMPT CARD
+   ═══════════════════════════════════════════════════════════ */
+
+.prompt-card {
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* ─────── HEADER SECTION ─────── */
+
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.prompt-title {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.prompt-subtitle {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   🔘 BUTTONS
+   ═══════════════════════════════════════════════════════════ */
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-spin {
+  background: #4CAF50;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-toggle.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-ai {
+  background: #FF6B6B;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-ai:disabled {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.btn-ai:disabled:hover {
+  transform: none;
+}
+
+.btn-clear {
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  color: #ff6b6b;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   📦 CONTENT SECTIONS
+   ═══════════════════════════════════════════════════════════ */
+
+.content-box {
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+/* ─────── AI ADVICE BOX ─────── */
+
+.ai-box {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ai-box h4 {
+  margin: 0 0 1rem;
+  color: #667eea;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-box p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ─────── TIPS & RESOURCES BOXES ─────── */
+
+.tips-box,
+.resources-box {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.tips-box h4,
+.resources-box h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.tips-box ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.tips-box li {
+  margin-bottom: 0.5rem;
+}
+
+.resources-box h5 {
+  margin-bottom: 8px;
+}
+
+.video-container {
+  margin-bottom: 16px;
+}
+
+.video-container iframe {
+  border-radius: 12px;
+}
+
+.video-link {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ─────── SESSION LOG ─────── */
+
+.session-log {
+  margin-top: 24px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.session-log h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.empty-log {
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.log-list {
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.log-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.log-item-label {
+  font-weight: 600;
+}
+
+.log-item-time {
+  opacity: 0.7;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   📱 RESPONSIVE DESIGN
+   ═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .prompt-title {
+    font-size: 2rem;
+  }
+
+  .prompt-card {
+    padding: 1.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
