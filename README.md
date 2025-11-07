@@ -164,17 +164,7 @@ Edit `src/App.jsx` and add to the `PROMPTS` array:
 }
 ```
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
@@ -184,7 +174,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-For questions or feedback, reach out at [your-email@example.com]
+For questions or feedback, reach out at marcobarot@gmail.com
 
 ---
 
