@@ -1,5 +1,6 @@
 # 💃 Freestyle Dance Prompt App 🕺
-<img width="1072" height="1376" alt="image" src="https://github.com/user-attachments/assets/ccc4d173-2e50-47f8-b474-d8fbec11bb0a" />
+<img width="2967" height="1636" alt="image" src="https://github.com/user-attachments/assets/4330bce9-3403-4bdf-a01b-7d62a62c6844" />
+
 
 A React-based web application that helps dancers practice freestyle by providing random prompts, tips, video resources, and AI-powered dance advice.
 
