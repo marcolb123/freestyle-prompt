@@ -10,7 +10,26 @@ import {
     PartyPopper,
     Radio,
     Headphones,
-    Dumbbell 
+    Dumbbell,
+    Target,
+    RotateCw,
+    Timer,
+    Waves as WavesIcon,
+    Brain,
+    Zap,
+    Combine,
+    TrendingUp,
+    ArrowDown,
+    ArrowRight,
+    ArrowUp,
+    RollerCoaster,
+    Bot,
+    Droplet,
+    Footprints,
+    Repeat,
+    Activity,
+    Route,
+    Circle
 } from "lucide-react";
 
 // ═══════════════════════════════════════════════════════════
@@ -26,10 +45,10 @@ const PROMPTS = [
             "Lock to the downbeat for 8 counts.",
         ],
         drills: [
-            "🎯 Basic Bounce: Stand with feet shoulder-width apart, bend knees slightly, and bounce for 16 counts. Focus on landing softly through the balls of your feet.",
-            "🔄 Bounce & Shift: Bounce in place for 8 counts, then shift weight side-to-side while maintaining the bounce for 8 counts.",
-            "⏱️ Speed Variation: Bounce at half-time (slow) for 8 counts, then double-time (fast) for 8 counts. Keep the energy consistent.",
-            "🎵 Musical Bounce: Practice bouncing on different beats - on the 1, on the 'and', or on the offbeat. This develops musicality.",
+            { icon: "Target", text: "Basic Bounce: Stand with feet shoulder-width apart, bend knees slightly, and bounce for 16 counts. Focus on landing softly through the balls of your feet." },
+            { icon: "RotateCw", text: "Bounce & Shift: Bounce in place for 8 counts, then shift weight side-to-side while maintaining the bounce for 8 counts." },
+            { icon: "Timer", text: "Speed Variation: Bounce at half-time (slow) for 8 counts, then double-time (fast) for 8 counts. Keep the energy consistent." },
+            { icon: "Music", text: "Musical Bounce: Practice bouncing on different beats - on the 1, on the 'and', or on the offbeat. This develops musicality." },
         ],
         links: [
             {
@@ -39,187 +58,184 @@ const PROMPTS = [
         ],
     },
     {
-		label: "Waves",
-		description: "body waves that flow through different body parts such as your arms, chest, and hips",
-		tips: [
-			"Wrist → elbow → shoulder → chest.",
-			"Lead with fingertips; imagine water.",
-			"Practice both directions with breath.",
-		],
-		drills: [
-			"💪 Arm Wave Isolated: Practice arm waves slowly - start from wrist, roll through elbow, then shoulder. Do 10 reps each arm.",
-			"🌊 Body Wave Flow: Stand with feet together, create a wave from chest down through hips to knees. Repeat 8 times.",
-			"🔄 Reverse Wave: Practice the wave in reverse - from knees up through hips, chest, and head. This builds control.",
-			"🎭 Mirror Practice: Face a mirror and watch your wave travel. Ensure each body part moves sequentially, not simultaneously.",
-		],
-		links: [
-			{
-				title: "Waving concepts",
-				url: "https://www.youtube.com/watch?v=GiPk-ekp58w",
-			},
-		],
-	},
-	
-	{
-		label: "Isolations",
-		description: "Moving individual body parts independently while keeping others still",
-		tips: [
-			"Move one body part while keeping others still.",
-			"Start with head, chest, or hips.",
-			"Use mirror to check clean movement.",
-		],
-		drills: [
-			"🧠 Head Rolls: Keep shoulders still. Roll head in a circle - front, side, back, side. Do 4 slow circles each direction.",
-			"💫 Chest Pops: Isolate chest moving forward and back. Keep hips and shoulders locked. Do 16 reps focusing on clean movement.",
-			"🎯 Hip Isolation: Move hips in a square pattern - right, forward, left, back. Keep upper body still. 8 reps each direction.",
-			"🔀 Combination Drill: Combine head (4 counts) + chest (4 counts) + hips (4 counts) while keeping other parts frozen. Repeat sequence 4 times.",
-		],
-		links: [
-			{
-				title: "Body isolation basics",
-				url: "https://www.youtube.com/watch?v=7Caiei_F48s",
-			},
-		],
-	},
-	{
-		label: "Levels",
-		description: "Exploring high, mid, and low positions with smooth transitions",
-		tips: [
-			"Explore high, mid, and low positions.",
-			"Transition smoothly between levels.",
-			"Challenge: spend 16 counts at each level.",
-		],
-		drills: [
-			"⬆️ High Level Exploration: Dance for 16 counts on your toes, reaching up. Try arm variations and turns.",
-			"➡️ Mid Level Flow: Stay in a half-squat position for 16 counts. Move around without standing fully up.",
-			"⬇️ Low Level Practice: Get low to the ground. Move for 16 counts using floor work, knee slides, or crawling patterns.",
-			"🎢 Level Transitions: Move from high → mid (4 counts), mid → low (4 counts), low → mid (4 counts), mid → high (4 counts). Repeat smoothly.",
-		],
-		links: [
-			{
-				title: "Level changes tutorial",
-				url: "https://www.youtube.com/shorts/11fj6wGv_7o",
-			},
-		],
-	},
-	{
-		label: "Textures",
-		description: "Contrasting sharp, robotic movements with smooth, liquid flows",
-		tips: [
-			"Mix sharp hits with smooth flows.",
-			"Contrast robotic and liquid movements.",
-			"Match texture to music dynamics.",
-		],
-		drills: [
-			"🤖 Robot Mode: Move in sharp, mechanical angles for 8 counts. Lock each position and move in straight lines only.",
-			"💧 Liquid Flow: Switch to smooth, continuous movements for 8 counts. Imagine moving through water.",
-			"⚡ Sharp Hits: Hit 4 sharp positions, holding each for 2 counts. Focus on clean stops and tension in the body.",
-			"🎭 Texture Switch: Alternate between sharp (4 counts) and smooth (4 counts) for a full 32-count sequence. Make the contrast obvious.",
-		],
-		links: [
-			{
-				title: "Textures explained",
-				url: "https://www.youtube.com/watch?v=T7o-PT0_Pvg",
-			},
-		],
-	},
-	{
-		label: "Footwork",
-		description: "Step patterns and variations",
-		tips: [
-			"Start simple: step-touch, kick-step.",
-			"Keep weight on balls of feet.",
-			"Add rhythm variations to basic steps. such as 1 an a 2 an 3 4",
-		],
-		drills: [
-			"👣 Step-Touch Basic: Step right, touch left. Step left, touch right. Do this for 16 counts, keeping it clean and on beat.",
-			"🎵 Rhythm Variation: Add syncopation - step on 1, 'and', 'a', 2. Practice this pattern slowly, then speed up.",
-			"🔄 Direction Changes: Do 4 step-touches forward, 4 to the side, 4 backward, 4 to the other side. Keep the pattern consistent.",
-			"⚡ Speed Challenge: Start slow (4 counts per step-touch), then gradually double the speed every 8 counts until you're at maximum speed.",
-		],
-		links: [
-			{
-				title: "Footwork fundamentals",
-				url: "https://www.youtube.com/watch?v=TPClzeTAMhI",
-			},
-		],
-	},
-	{
-		label: "Musicality",
-		description: "Dancing to different layers of music with intention and dynamics",
-		tips: [
-			"Hit accents and breaks in the music.",
-			"Dance to different instruments/layers.",
-			"Pause when the music pauses.",
-		],
-		drills: [
-			"🎹 Instrument Isolation: Listen to a song. Dance to ONLY the drums for 16 counts, then switch to ONLY the melody for 16 counts.",
-			"🎯 Accent Hits: Play a song and freeze/hit every time there's a strong accent or drop. This trains you to catch musical highlights.",
-			"⏸️ Pause Practice: Dance and freeze completely when the music has breaks or silence. Resume immediately when music returns.",
-			"📊 Dynamics Match: Dance small/soft during quiet parts, big/strong during loud parts. Let your energy mirror the music's intensity.",
-		],
-		links: [
-			{
-				title: "Music interpretation",
-				url: "https://www.youtube.com/watch?v=BT1i0OEUP6k&t=8s",
-			},
-		],
-	},
-	{
-		label: "Floor Work",
-		description: "Ground-based movement including spins, rolls, and smooth transitions",
-		tips: [
-			"Practice getting down and up smoothly.",
-			"Use hands for support and transitions.",
-			"Try and explore pathways from the standing to knee to lying down positions.",
-		],
-		drills: [
-			"⬇️ Down-Up Flow: Start standing. Get to the floor in 4 counts (any way you want). Get back up in 4 counts. Repeat 8 times.",
-			"🔄 Floor Exploration: Spend 32 counts moving ONLY on the floor. Try rolls, spins, crawls - don't stand up.",
-			"🌀 Knee Spin Practice: From kneeling position, practice spinning on your knees. Start with 180° turns, then progress to 360°.",
-			"🛤️ Pathway Drill: Create a sequence: stand → kneel (4 counts) → sit (4 counts) → lie down (4 counts) → reverse back up. Make it smooth.",
-		],
-		links: [
-			{
-				title: "Floor work variations",
-				url: "https://www.youtube.com/watch?v=TBr9fPsQfxU",
-			},
-			{
-				title: "Floor work transitions",
-				url: "https://www.youtube.com/watch?v=S3LLsWMc2VM",
-			}
-		],
-	},
-	
+        label: "Waves",
+        description: "body waves that flow through different body parts such as your arms, chest, and hips",
+        tips: [
+            "Wrist → elbow → shoulder → chest.",
+            "Lead with fingertips; imagine water.",
+            "Practice both directions with breath.",
+        ],
+        drills: [
+            { icon: "Dumbbell", text: "Arm Wave Isolated: Practice arm waves slowly - start from wrist, roll through elbow, then shoulder. Do 10 reps each arm." },
+            { icon: "WavesIcon", text: "Body Wave Flow: Stand with feet together, create a wave from chest down through hips to knees. Repeat 8 times." },
+            { icon: "RotateCw", text: "Reverse Wave: Practice the wave in reverse - from knees up through hips, chest, and head. This builds control." },
+            { icon: "Activity", text: "Mirror Practice: Face a mirror and watch your wave travel. Ensure each body part moves sequentially, not simultaneously." },
+        ],
+        links: [
+            {
+                title: "Waving concepts",
+                url: "https://www.youtube.com/watch?v=GiPk-ekp58w",
+            },
+        ],
+    },
+    
+    {
+        label: "Isolations",
+        description: "Moving individual body parts independently while keeping others still",
+        tips: [
+            "Move one body part while keeping others still.",
+            "Start with head, chest, or hips.",
+            "Use mirror to check clean movement.",
+        ],
+        drills: [
+            { icon: "Brain", text: "Head Rolls: Keep shoulders still. Roll head in a circle - front, side, back, side. Do 4 slow circles each direction." },
+            { icon: "Zap", text: "Chest Pops: Isolate chest moving forward and back. Keep hips and shoulders locked. Do 16 reps focusing on clean movement." },
+            { icon: "Target", text: "Hip Isolation: Move hips in a square pattern - right, forward, left, back. Keep upper body still. 8 reps each direction." },
+            { icon: "Combine", text: "Combination Drill: Combine head (4 counts) + chest (4 counts) + hips (4 counts) while keeping other parts frozen. Repeat sequence 4 times." },
+        ],
+        links: [
+            {
+                title: "Body isolation basics",
+                url: "https://www.youtube.com/watch?v=7Caiei_F48s",
+            },
+        ],
+    },
+    {
+        label: "Levels",
+        description: "Exploring high, mid, and low positions with smooth transitions",
+        tips: [
+            "Explore high, mid, and low positions.",
+            "Transition smoothly between levels.",
+            "Challenge: spend 16 counts at each level.",
+        ],
+        drills: [
+            { icon: "ArrowUp", text: "High Level Exploration: Dance for 16 counts on your toes, reaching up. Try arm variations and turns." },
+            { icon: "ArrowRight", text: "Mid Level Flow: Stay in a half-squat position for 16 counts. Move around without standing fully up." },
+            { icon: "ArrowDown", text: "Low Level Practice: Get low to the ground. Move for 16 counts using floor work, knee slides, or crawling patterns." },
+            { icon: "RollerCoaster", text: "Level Transitions: Move from high → mid (4 counts), mid → low (4 counts), low → mid (4 counts), mid → high (4 counts). Repeat smoothly." },
+        ],
+        links: [
+            {
+                title: "Level changes tutorial",
+                url: "https://www.youtube.com/shorts/11fj6wGv_7o",
+            },
+        ],
+    },
+    {
+        label: "Textures",
+        description: "Contrasting sharp, robotic movements with smooth, liquid flows",
+        tips: [
+            "Mix sharp hits with smooth flows.",
+            "Contrast robotic and liquid movements.",
+            "Match texture to music dynamics.",
+        ],
+        drills: [
+            { icon: "Bot", text: "Robot Mode: Move in sharp, mechanical angles for 8 counts. Lock each position and move in straight lines only." },
+            { icon: "Droplet", text: "Liquid Flow: Switch to smooth, continuous movements for 8 counts. Imagine moving through water." },
+            { icon: "Zap", text: "Sharp Hits: Hit 4 sharp positions, holding each for 2 counts. Focus on clean stops and tension in the body." },
+            { icon: "Activity", text: "Texture Switch: Alternate between sharp (4 counts) and smooth (4 counts) for a full 32-count sequence. Make the contrast obvious." },
+        ],
+        links: [
+            {
+                title: "Textures explained",
+                url: "https://www.youtube.com/watch?v=T7o-PT0_Pvg",
+            },
+        ],
+    },
+    {
+        label: "Footwork",
+        description: "Step patterns and variations",
+        tips: [
+            "Start simple: step-touch, kick-step.",
+            "Keep weight on balls of feet.",
+            "Add rhythm variations to basic steps. such as 1 an a 2 an 3 4",
+        ],
+        drills: [
+            { icon: "Footprints", text: "Step-Touch Basic: Step right, touch left. Step left, touch right. Do this for 16 counts, keeping it clean and on beat." },
+            { icon: "Music", text: "Rhythm Variation: Add syncopation - step on 1, 'and', 'a', 2. Practice this pattern slowly, then speed up." },
+            { icon: "RotateCw", text: "Direction Changes: Do 4 step-touches forward, 4 to the side, 4 backward, 4 to the other side. Keep the pattern consistent." },
+            { icon: "Zap", text: "Speed Challenge: Start slow (4 counts per step-touch), then gradually double the speed every 8 counts until you're at maximum speed." },
+        ],
+        links: [
+            {
+                title: "Footwork fundamentals",
+                url: "https://www.youtube.com/watch?v=TPClzeTAMhI",
+            },
+        ],
+    },
+    {
+        label: "Musicality",
+        description: "Dancing to different layers of music with intention and dynamics",
+        tips: [
+            "Hit accents and breaks in the music.",
+            "Dance to different instruments/layers.",
+            "Pause when the music pauses.",
+        ],
+        drills: [
+            { icon: "Music", text: "Instrument Isolation: Listen to a song. Dance to ONLY the drums for 16 counts, then switch to ONLY the melody for 16 counts." },
+            { icon: "Target", text: "Accent Hits: Play a song and freeze/hit every time there's a strong accent or drop. This trains you to catch musical highlights." },
+            { icon: "Circle", text: "Pause Practice: Dance and freeze completely when the music has breaks or silence. Resume immediately when music returns." },
+            { icon: "TrendingUp", text: "Dynamics Match: Dance small/soft during quiet parts, big/strong during loud parts. Let your energy mirror the music's intensity." },
+        ],
+        links: [
+            {
+                title: "Music interpretation",
+                url: "https://www.youtube.com/watch?v=BT1i0OEUP6k&t=8s",
+            },
+        ],
+    },
+    {
+        label: "Floor Work",
+        description: "Ground-based movement including spins, rolls, and smooth transitions",
+        tips: [
+            "Practice getting down and up smoothly.",
+            "Use hands for support and transitions.",
+            "Try and explore pathways from the standing to knee to lying down positions.",
+        ],
+        drills: [
+            { icon: "ArrowDown", text: "Down-Up Flow: Start standing. Get to the floor in 4 counts (any way you want). Get back up in 4 counts. Repeat 8 times." },
+            { icon: "RotateCw", text: "Floor Exploration: Spend 32 counts moving ONLY on the floor. Try rolls, spins, crawls - don't stand up." },
+            { icon: "Repeat", text: "Knee Spin Practice: From kneeling position, practice spinning on your knees. Start with 180° turns, then progress to 360°." },
+            { icon: "Route", text: "Pathway Drill: Create a sequence: stand → kneel (4 counts) → sit (4 counts) → lie down (4 counts) → reverse back up. Make it smooth." },
+        ],
+        links: [
+            {
+                title: "Floor work variations",
+                url: "https://www.youtube.com/watch?v=TBr9fPsQfxU",
+            },
+            {
+                title: "Floor work transitions",
+                url: "https://www.youtube.com/watch?v=S3LLsWMc2VM",
+            }
+        ],
+    },
+    
 ];
 
-// ═══════════════════════════════════════════════════════════
-// 🎵 MUSIC GENRES: SoundCloud mixes by genre
-// ═══════════════════════════════════════════════════════════
-const MUSIC_GENRES = [
-    {
-        name: "House",
-        soundCloudUrl: "https://soundcloud.com/djsupad/housupa-afro-tribal-house-mix",
-        color: "#FF6B6B"
-    },
-    {
-        name: "Krump",
-        soundCloudUrl: "https://soundcloud.com/merciiful1/krump-mix",
-        color: "#4ECDC4"
-    },
-    {
-        name: "Hip-Hop",
-        soundCloudUrl: "https://soundcloud.com/kaisalart/old-school-vibes-vol-2-hip-hop-mix",
-        color: "#FFE66D"
-    },
-    {
-        name: "Popping",
-        soundCloudUrl: "https://soundcloud.com/dj-dbon1-314759770/get-the-tapes-vol-22-hip-hop",
-        color: "#95E1D3"
-    },
-    
-    
-];
+// Icon mapping object
+const iconMap = {
+    Target,
+    RotateCw,
+    Timer,
+    Music,
+    Dumbbell,
+    WavesIcon,
+    Activity,
+    Brain,
+    Zap,
+    Combine,
+    ArrowUp,
+    ArrowRight,
+    ArrowDown,
+    RollerCoaster,
+    Bot,
+    Droplet,
+    Footprints,
+    Repeat,
+    Route,
+    TrendingUp,
+    Circle
+};
 
 // ═══════════════════════════════════════════════════════════
 // 📱 MAIN APP: Wraps everything with title
@@ -379,10 +395,16 @@ function PromptCard() {
                     <h4>
                         <Dumbbell size={20} /> Practice Drills
                     </h4>
-                    <ul>
-                        {current.drills.map((drill, i) => (
-                            <li key={i}>{drill}</li>
-                        ))}
+                    <ul className="drills-list">
+                        {current.drills.map((drill, i) => {
+                            const IconComponent = iconMap[drill.icon];
+                            return (
+                                <li key={i} className="drill-item">
+                                    {IconComponent && <IconComponent size={18} className="drill-icon" />}
+                                    <span>{drill.text}</span>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
             )}

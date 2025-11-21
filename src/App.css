@@ -228,11 +228,39 @@
   gap: 8px;
 }
 
-.drills-box p {
+.drills-list {
   margin: 0;
-  line-height: 1.8;
+  padding: 0;
+  list-style: none;
+}
+
+.drill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.drill-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.drill-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.drill-item span {
+  flex: 1;
+  line-height: 1.6;
   font-size: 0.95rem;
 }
+
 /* ═══════════════════════════════════════════════════════════
    🎵 RIGHT SIDE PANEL (Music + Resources)
    ═══════════════════════════════════════════════════════════ */
